@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(145, 251, 118);
+  background-color: rgb(161, 251, 251);
 }
 
 .container {
@@ -16,18 +16,47 @@ body {
 
 .title {
   text-align: center;
-  color: white;
   margin: 20px 0;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100px;
   padding: 10px 5px;
   border-radius: 5px;
-  border: 1px solid white;
+  background-color: white;
 }
 
-.blue {
-  color: blue;
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+/* button */
+.btn {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.btn_click {
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.btn_click:active {
+  color: white;
+  background-color: black;
+  border: 1px solid grey;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
 }

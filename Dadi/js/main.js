@@ -1,32 +1,23 @@
-var emailUtente;
+var tiri = prompt("inserisci quanti tiri fare");
 
-var emailDataBase = ["giorgio@hotmail.it", "luca@live.com", "bbsognidoro@hotmail.it", "boolean@info.it", "lucia@libero.net"]
-
-emailUtente = prompt("Inserisci la tua Email");
-console.log(emailUtente);
+var numeroDatoPc, numeroDatoUtente;
 
 
-if (emailUtente == emailDataBase[0]) {
-  console.log("Email trovata nel database");
-  document.getElementById('email').innerHTML =  "Email trovata nel database";
+for (var i = 0; i < tiri; i++) {
+  numeroDatoUtente = Math.floor(Math.random() * 6) + 1;
+
+  numeroDatoPc = Math.floor(Math.random() * 6) + 1;
+
+  console.log(numeroDatoPc);
+  console.log(numeroDatoUtente);
 }
-else if (emailUtente == emailDataBase[1]) {
-  console.log("Email trovata nel database");
-  document.getElementById('email').innerHTML =  "Email trovata nel database";
+
+if (numeroDatoPc > numeroDatoUtente) {
+  console.log ("Il vincitore è il PC con " + numeroDatoPc + " punti.");
 }
-else if (emailUtente == emailDataBase[2]) {
-  console.log("Email trovata nel database");
-  document.getElementById('email').innerHTML =  "Email trovata nel database";
-}
-else if (emailUtente == emailDataBase[3]) {
-  console.log("Email trovata nel database");
-  document.getElementById('email').innerHTML =  "Email trovata nel database";
-}
-else if (emailUtente == emailDataBase[4]) {
-  console.log("Email trovata nel database");
-  document.getElementById('email').innerHTML =  "Email trovata nel database";
+else if (numeroDatoPc < numeroDatoUtente){
+  console.log ("Il vincitore è l'utente " + numeroDatoUtente + " punti.");
 }
 else {
-  console.log("Email non trovata nel database");
-  document.getElementById('email').innerHTML =  "Email non trovata nel database"
+  console.log ("Risultato uguale");
 }
