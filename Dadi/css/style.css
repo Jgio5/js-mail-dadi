@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.row {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+#vincitore {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
